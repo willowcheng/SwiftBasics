@@ -7,4 +7,7 @@ str = "Hello, World"
 
 let modernProgrammingLanguage = "Swift"
 
-var greeting : String = str + modernProgrammingLanguage // implicit type String
+var greeting = "\(str) \(modernProgrammingLanguage)"
+
+println("To build an iPhone app we need to learn \(modernProgrammingLanguage)")
+
