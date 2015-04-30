@@ -2,5 +2,10 @@
 
 import UIKit
 
-println("List:\n1\t🌔\n2\t😃\n6\tOranges")
+let language: String = "Swift"
 
+let year: Int = 2014 // Int or Integer
+
+var version: Double = 1.0 // Double = 15 decimal and Float = 7 decimal
+
+var isAwesome: Bool = true // Boolean or Bool
