@@ -2,10 +2,14 @@
 
 import UIKit
 
-let language: String = "Swift"
+let height = 12 // In Feet
+let width = 10 // In Feet
 
-let year: Int = 2014 // Int or Integer
+let area = height * width
 
-var version: Double = 1.0 // Double = 15 decimal and Float = 7 decimal
+// 1 sq. meter = 1 sq. foot / 10.764
+let areaInMeters = Double(area) / 10.764
 
-var isAwesome: Bool = true // Boolean or Bool
+let chairWidth = 3
+let spaceRemaining = width % chairWidth
+let chairs = width / chairWidth
