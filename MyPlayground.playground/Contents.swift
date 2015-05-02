@@ -2,4 +2,21 @@
 
 import UIKit
 
-var x = 100 + 100 - (((5 * 2) / 3) % 7)
+var levelScore = 0
+
+levelScore++
+
+var totalScore = ++levelScore
+totalScore
+levelScore
+
+// ++ increment unary operator
+// -- decrement unary operator
+// - negative operator
+
+levelScore = -levelScore
+
+// ! NOT Operator
+
+let on = false
+let off = !on
