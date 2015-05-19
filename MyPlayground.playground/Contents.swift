@@ -2,21 +2,10 @@
 
 import UIKit
 
-var levelScore = 0
+var todo: [String] = ["Return Calls", "Write Blogpost", "Cook Dinner"]
 
-levelScore++
+todo += ["Pickup Laundry", "Buy Bulbs"]
 
-var totalScore = ++levelScore
-totalScore
-levelScore
+todo[0]
 
-// ++ increment unary operator
-// -- decrement unary operator
-// - negative operator
-
-levelScore = -levelScore
-
-// ! NOT Operator
-
-let on = false
-let off = !on
+todo.count
