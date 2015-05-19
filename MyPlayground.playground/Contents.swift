@@ -1,26 +1,27 @@
-//: Playground - noun: a place where people can play
+//: Dictionary
 
 import UIKit
 
-var todo: [String] = ["Return Calls", "Write Blogpost", "Cook Dinner"]
+// Code     Country Name
+// or
+// Key      Value
+// CA       Canada
+// BE       Belgium
+// FR       France
+// DE       Germany
+// UK       United Kindom
+// US       United States
 
-todo += ["Pickup Laundry", "Buy Bulbs"]
+var countries = ["CA": "Canada", "BE": "Belgium", "FR": "France"]
 
-todo[0]
+countries["CA"]
 
-todo.count
+countries["US"] = "United States"
+countries
 
-todo.append("Edit Blog Post")
-todo
+countries["US"] = "United States of America"
+countries
 
-todo[2] = "Clean Dishes"
-todo
-
-let item = todo.removeLast()
+let item = countries.removeValueForKey("CA")
 item
-
-let item2 = todo.removeAtIndex(1)
-item2
-
-todo.insert("Call Mom", atIndex: 0)
-todo
+countries
