@@ -1,18 +1,17 @@
-//: Optionals
+// While
 
 import UIKit
 
 var todo : [String] = ["Return calls", "Write blog", "Cook dinner", "Pickup Laundry", "Buy bulbs"]
 
-for item in todo {
-    println(item)
+var index = 0
+while index < todo.count {
+    println(todo[index])
+    index++
 }
 
-for number in 1...10 {
-    println("\(number) times 2 is \(number*2)")
-}
-
-
-for number in 1..<10 {
-    println("\(number) times 2 is \(number*2)")
-}
+index = 0
+do {
+    println(todo[index])
+    index++
+} while index < todo.count
