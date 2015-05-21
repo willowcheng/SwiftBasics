@@ -1,27 +1,18 @@
-//: Dictionary
+//: Optionals
 
 import UIKit
 
-// Code     Country Name
-// or
-// Key      Value
-// CA       Canada
-// BE       Belgium
-// FR       France
-// DE       Germany
-// UK       United Kindom
-// US       United States
+var todo : [String] = ["Return calls", "Write blog", "Cook dinner", "Pickup Laundry", "Buy bulbs"]
 
-var countries = ["CA": "Canada", "BE": "Belgium", "FR": "France"]
+for item in todo {
+    println(item)
+}
 
-countries["CA"]
+for number in 1...10 {
+    println("\(number) times 2 is \(number*2)")
+}
 
-countries["US"] = "United States"
-countries
 
-countries["US"] = "United States of America"
-countries
-
-let item = countries.removeValueForKey("CA")
-item
-countries
+for number in 1..<10 {
+    println("\(number) times 2 is \(number*2)")
+}
