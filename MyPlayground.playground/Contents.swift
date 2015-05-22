@@ -1,15 +1,18 @@
-// While
+// Conditionals
 
 import UIKit
 
-var todo : [String] = ["Return calls", "Write blog", "Cook dinner", "Pickup Laundry", "Buy bulbs"]
+let cards = 1...13
 
-var index = 0 // index
-while index < todo.count { // condition
-    println(todo[index])
-    index++ // increment
-}
 
-for var i = 0; i < todo.count; i++ {
-    println(todo[i])
+for card in cards {
+    if card == 11 {
+        println("Jack")
+    } else if card == 12 {
+        println("Queen")
+    } else if card == 13 {
+        println("King")
+    } else {
+        println(card)
+    }
 }
