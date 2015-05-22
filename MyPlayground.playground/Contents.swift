@@ -6,13 +6,8 @@ let cards = 1...13
 
 
 for card in cards {
-    if card == 11 {
-        println("Jack")
-    } else if card == 12 {
-        println("Queen")
-    } else if card == 13 {
-        println("King")
-    } else {
-        println(card)
+    switch card {
+    case 1, 11, 12, 13: println("Trump cards")
+    default: println(card)
     }
 }
